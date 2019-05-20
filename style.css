@@ -14,6 +14,11 @@ body {
     width: 100vw;
 }
 
+svg {
+    height: 22px;
+    padding-top: 4px
+}
+
 .menu {
     width: 140px;
     height: 100vh;
@@ -131,4 +136,52 @@ i {
     background: url(img/yellowLogo.png) no-repeat;
 
     background-position: center;
+}
+
+.menu .item8 {
+    position: absolute;
+    bottom: 70px;
+}
+
+.menu .item9 {
+    display: flex;
+    justify-content: space-around;
+    height: 340px;
+
+    align-items: flex-end;
+}
+
+.menu .reddit {
+    background: url(img/redLogo.png);
+    width: 25px;
+    height: 26px;
+
+}
+
+.menu .item3:before {
+
+    /*  padding-right: 9px; */
+    padding-left: 6px;
+    padding-right: 7px;
+}
+
+.menu .item5:before {
+
+    /* padding-right: 8px; */
+    padding-left: 6px;
+    padding-right: 7px;
+}
+
+.menu .item7:before {
+
+    /* padding-right: 13px; */
+    padding-left: 8.5px;
+    padding-right: 9px;
+}
+
+.menu .item6:before {
+
+    /* padding-right: 12px; */
+    padding-left: 8px;
+    padding-right: 8px;
 }
