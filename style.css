@@ -79,12 +79,7 @@ i {
 }
 
 .fa {
-  /* background-color: antiquewhite; */
   margin: 14px 0;
-}
-
-.menu .menu-wrap li {
-  cursor: pointer;
 }
 
 .menu .item1:before {
@@ -98,7 +93,12 @@ i {
 .menu .item2 i {
   color: var(--main-green-color);
 }
-
+.fb,
+.linkedin,
+.twitter,
+.reddit {
+  cursor: pointer;
+}
 .menu .item3:before {
   background-color: var(--main-orange-color);
 }
@@ -138,7 +138,15 @@ i {
 .menu .item7 i {
   color: var(--main-yellow-color);
 }
-
+.menu .item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7 {
+  cursor: pointer;
+}
 .menu .logo.item8 {
   width: 120px;
   height: 40px;
@@ -317,7 +325,7 @@ i {
 }
 
 .secondSection li {
-  background: url(img/redditFace.png) no-repeat;
+  background: url(img/clock.png) no-repeat;
 }
 
 .sections .secondSection li i {
@@ -431,7 +439,6 @@ i {
   color: var(--main-yellow-color);
 
   transition: all 0.3s ease-in-out;
-
 }
 
 .sections .secondSection .links li .fa {
@@ -439,7 +446,6 @@ i {
   margin: 0;
   padding-right: 5px;
 }
-
 
 .thirdSection .gitlab {
   position: absolute;
@@ -454,8 +460,6 @@ i {
   top: 100px;
   font-size: 16px;
   text-transform: uppercase;
-
-
 }
 
 .thirdSection .gitlab:hover {
@@ -490,7 +494,6 @@ i {
 }
 
 .thirdSection .repo {
-
   /* background-color: gray; */
   height: max-content;
   width: inherit;
@@ -540,9 +543,9 @@ i {
 .ads {
   position: relative;
   cursor: pointer;
-  top: 150px;
+  top: 145px;
   width: 260px;
-  height: 30%;
+  height: 15%;
   border-left: 3px solid #44475a;
   transition: all 0.3s ease-in-out;
   font-size: 14px;
@@ -554,7 +557,6 @@ i {
 
 .ads .cont {
   display: flex;
-
 }
 
 .ads .cont p {
@@ -579,13 +581,41 @@ i {
   margin-top: 8px;
   margin-left: 10px;
   font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+.ads .comment:hover {
+  color: var(--main-blue-color);
+}
+.fa.fa-lock {
+  font-size: 16px;
+  margin: 0;
+  margin-left: -10px;
+}
+.fa.fa-times-circle,
+.fa.fa-question-circle {
+  margin-right: -6px;
 }
 
+.fa.fa-question-circle {
+  font-size: 20px;
+}
+.fa.fa-times-circle {
+  font-size: 12px;
+}
+.fa.fa-lock:before {
+  color: white;
+}
+.fa.fa-times-circle:before,
+.fa.fa-question-circle:before {
+  color: var(--main-orange-color);
+  margin: 0;
+}
 /*time section*/
 .time {
   position: relative;
   top: 400px;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -599,4 +629,14 @@ i {
 .time .orange {
   color: var(--main-orange-color);
   font-weight: 600;
+}
+
+.thirdSection li {
+  background: url(img/git.png) no-repeat;
+}
+.sections .secondSection li i {
+  top: 3px;
+}
+.sections .thirdSection li i {
+  top: 3px;
 }
