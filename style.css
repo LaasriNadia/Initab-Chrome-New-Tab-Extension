@@ -613,7 +613,7 @@ i {
 /*time section*/
 .time {
   position: relative;
-  top: 400px;
+  top: 450px;
   font-size: 12px;
   line-height: 20px;
   display: flex;
@@ -621,7 +621,18 @@ i {
   justify-content: center;
   text-align: center;
 }
-
+.dynamic-time {
+  bottom: 10px;
+  position: relative;
+  color: var(--main-opacPurple-color);
+}
+.date {
+  font-size: 130px;
+}
+.dateString {
+  margin-top: 50px;
+  font-size: 25px;
+}
 .time .purple {
   color: var(--main-opacPurple-color);
 }
