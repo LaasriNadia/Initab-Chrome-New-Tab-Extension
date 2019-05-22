@@ -93,12 +93,14 @@ i {
 .menu .item2 i {
   color: var(--main-green-color);
 }
+
 .fb,
 .linkedin,
 .twitter,
 .reddit {
   cursor: pointer;
 }
+
 .menu .item3:before {
   background-color: var(--main-orange-color);
 }
@@ -138,6 +140,7 @@ i {
 .menu .item7 i {
   color: var(--main-yellow-color);
 }
+
 .menu .item1,
 .item2,
 .item3,
@@ -147,6 +150,7 @@ i {
 .item7 {
   cursor: pointer;
 }
+
 .menu .logo.item8 {
   width: 120px;
   height: 40px;
@@ -178,10 +182,17 @@ i {
   align-items: flex-end;
 }
 
+.menu .item9 .githubb {
+  width: 25px;
+  height: 25px;
+}
+
 .menu .reddit {
   background: url(img/redLogo.png);
   width: 25px;
   height: 26px;
+  background-size: cover;
+  position: absolute;
 }
 
 .menu .item3:before {
@@ -583,14 +594,17 @@ i {
   font-style: italic;
   transition: all 0.3s ease-in-out;
 }
+
 .ads .comment:hover {
   color: var(--main-blue-color);
 }
+
 .fa.fa-lock {
   font-size: 16px;
   margin: 0;
   margin-left: -10px;
 }
+
 .fa.fa-times-circle,
 .fa.fa-question-circle {
   margin-right: -6px;
@@ -599,17 +613,21 @@ i {
 .fa.fa-question-circle {
   font-size: 20px;
 }
+
 .fa.fa-times-circle {
   font-size: 12px;
 }
+
 .fa.fa-lock:before {
   color: white;
 }
+
 .fa.fa-times-circle:before,
 .fa.fa-question-circle:before {
   color: var(--main-orange-color);
   margin: 0;
 }
+
 /*time section*/
 .time {
   position: relative;
@@ -621,18 +639,22 @@ i {
   justify-content: center;
   text-align: center;
 }
+
 .dynamic-time {
   bottom: 10px;
   position: relative;
   color: var(--main-opacPurple-color);
 }
+
 .date {
   font-size: 130px;
 }
+
 .dateString {
   margin-top: 50px;
   font-size: 25px;
 }
+
 .time .purple {
   color: var(--main-opacPurple-color);
 }
@@ -645,9 +667,73 @@ i {
 .thirdSection li {
   background: url(img/git.png) no-repeat;
 }
+
 .sections .secondSection li i {
   top: 3px;
 }
+
 .sections .thirdSection li i {
   top: 3px;
+}
+
+.sections .firstSection,
+.secondSection>.links,
+.thirdSection>.repos {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+.firstSection .article.ar5 {
+  top: 220px;
+}
+
+.firstSection .article.ar6 {
+  top: 250px;
+}
+
+.sections .secondSection .links li:nth-of-type(7) {
+  left: 0;
+  top: 250px;
+}
+
+.sections .secondSection .links li:nth-of-type(8) {
+  left: 0;
+  top: 290px;
+}
+
+.sections .secondSection .links li:nth-of-type(9) {
+  left: 0;
+  top: 330px;
+}
+
+.thirdSection .repo:nth-of-type(4) {
+  top: 430px;
+}
+
+.thirdSection .repo:nth-of-type(5) {
+  top: 570px;
+}
+
+
+
+
+ul.links::-webkit-scrollbar {
+  opacity: 0;
+  width: 0px;
+}
+
+section.firstSection::-webkit-scrollbar {
+  width: 0px;
+}
+
+section.thirdSection>.repos::-webkit-scrollbar {
+  width: 0px;
+}
+
+ul.links,
+section.firstSection,
+section.thirdSection>.repos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
