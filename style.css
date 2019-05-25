@@ -155,7 +155,7 @@ i {
   width: 120px;
   height: 40px;
   margin-left: 12px;
-
+  position: absolute;
   background: url(img/grayLogo.png) no-repeat;
   background-position: center;
 
@@ -175,6 +175,8 @@ i {
 }
 
 .menu .item9 {
+  bottom: 20px;
+  position: sticky;
   display: flex;
   justify-content: space-around;
   height: 340px;
@@ -677,12 +679,11 @@ i {
 }
 
 .sections .firstSection,
-.secondSection>.links,
-.thirdSection>.repos {
+.secondSection > .links,
+.thirdSection > .repos {
   overflow-y: scroll;
   overflow-x: hidden;
 }
-
 
 .firstSection .article.ar5 {
   top: 220px;
@@ -715,9 +716,6 @@ i {
   top: 570px;
 }
 
-
-
-
 ul.links::-webkit-scrollbar {
   opacity: 0;
   width: 0px;
@@ -727,13 +725,13 @@ section.firstSection::-webkit-scrollbar {
   width: 0px;
 }
 
-section.thirdSection>.repos::-webkit-scrollbar {
+section.thirdSection > .repos::-webkit-scrollbar {
   width: 0px;
 }
 
 ul.links,
 section.firstSection,
-section.thirdSection>.repos {
+section.thirdSection > .repos {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
