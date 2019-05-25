@@ -156,6 +156,7 @@ i {
   height: 40px;
   margin-left: 12px;
   position: absolute;
+  bottom: 100px;
   background: url(img/grayLogo.png) no-repeat;
   background-position: center;
 
@@ -175,7 +176,8 @@ i {
 }
 
 .menu .item9 {
-  bottom: 20px;
+  top: 10px;
+  bottom: 10px;
   position: sticky;
   display: flex;
   justify-content: space-around;
